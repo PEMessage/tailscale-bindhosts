@@ -171,7 +171,7 @@ tailscale-bindhosts apply
 
 ```sh
 ./build.sh
-# dist/tailscale-bindhosts-v1.0.0.zip
+# dist/tailscale-bindhosts-<version>.zip
 ```
 
 需要 `bash` 和 `zip`。

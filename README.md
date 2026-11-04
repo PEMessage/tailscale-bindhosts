@@ -179,7 +179,7 @@ file.
 
 ```sh
 ./build.sh
-# dist/tailscale-bindhosts-v1.0.0.zip
+# dist/tailscale-bindhosts-<version>.zip
 ```
 
 Requires `bash` and `zip`.

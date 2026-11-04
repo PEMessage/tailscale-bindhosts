@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+    tags:
+      - '*'
+      - '!prerelease'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && 'main' || github.ref }}
+      - run: ./build.sh
+      - if: github.event_name == 'workflow_dispatch'
+        run: |
+          git tag -f prerelease
+          git push -f origin refs/tags/prerelease
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          tag_name: ${{ github.event_name == 'workflow_dispatch' && 'prerelease' || github.ref_name }}
+          prerelease: ${{ github.event_name == 'workflow_dispatch' }}
