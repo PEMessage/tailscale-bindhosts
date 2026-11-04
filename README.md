@@ -1,7 +1,5 @@
 <h1 align="center">tailscale-bindhosts</h1>
 
-<p align="center">Make Android resolve Tailscale MagicDNS names.</p>
-
 <p align="center">English · <a href="README.zh.md">简体中文</a></p>
 
 <p align="center">
@@ -11,6 +9,8 @@
   <img alt="Magisk, KernelSU, APatch" src="https://img.shields.io/badge/Magisk-KernelSU-APatch-blue?style=flat-square&logo=android&logoColor=white">
   <a href="https://github.com/bindhosts/bindhosts"><img alt="Requires bindhosts" src="https://img.shields.io/badge/requires-bindhosts-informational?style=flat-square"></a>
 </p>
+
+## Why use this module
 
 Magisk-Tailscaled is a good setup: `tailscaled` runs on the device without occupying Android's
 VPN slot. The catch is that Android does not let it take over system DNS, so MagicDNS names do
@@ -183,3 +183,7 @@ file.
 ```
 
 Requires `bash` and `zip`.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE).

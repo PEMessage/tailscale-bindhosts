@@ -18,6 +18,7 @@ MODULE_FILES=(
     tailscale-bindhosts.sh
     lib
     META-INF
+    LICENSE
 )
 
 # -- helpers ---------------------------------------------------------------

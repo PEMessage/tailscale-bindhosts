@@ -1,7 +1,5 @@
 <h1 align="center">tailscale-bindhosts</h1>
 
-<p align="center">让 Android 解析 Tailscale 的 MagicDNS 名字。</p>
-
 <p align="center"><a href="README.md">English</a> · 简体中文</p>
 
 <p align="center">
@@ -11,6 +9,8 @@
   <img alt="Magisk, KernelSU, APatch" src="https://img.shields.io/badge/Magisk-KernelSU-APatch-blue?style=flat-square&logo=android&logoColor=white">
   <a href="https://github.com/bindhosts/bindhosts"><img alt="Requires bindhosts" src="https://img.shields.io/badge/requires-bindhosts-informational?style=flat-square"></a>
 </p>
+
+## 为什么使用这个模块
 
 Magisk-Tailscaled 很好：`tailscaled` 直接运行在本机，不占用 Android 的 VPN 槽位。但受
 Android 限制，它没法像桌面 Linux 那样接管系统 DNS，所以 MagicDNS 名字不会自动生效：
@@ -175,3 +175,7 @@ tailscale-bindhosts apply
 ```
 
 需要 `bash` 和 `zip`。
+
+## 许可证
+
+本项目使用 GNU General Public License v3.0 授权，详见 [LICENSE](LICENSE)。
