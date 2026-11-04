@@ -1,0 +1,20 @@
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./build.sh
+      - uses: KernelSU-Modules/tools/actions/module-release@606016adfbe4c286507ff6cd9bedaa74e1bff108
+        with:
+          module-dir: build
+          require-immutable: true

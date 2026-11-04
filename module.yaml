@@ -1,0 +1,12 @@
+schemaVersion: 1
+id: tailscale-bindhosts
+name: tailscale-bindhosts
+summary: Generate MagicDNS hosts entries for tailscaled and apply them through bindhosts.
+description: README.md
+license: GPL-3.0-only
+homepage: https://github.com/PEMessage/tailscale-bindhosts
+support: https://github.com/PEMessage/tailscale-bindhosts/issues
+tags: [tailscale, hosts, dns]
+
+authors:
+  - name: PEMessage

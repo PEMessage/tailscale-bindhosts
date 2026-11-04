@@ -1,6 +1,6 @@
 id=tailscale-bindhosts
 name=tailscale-bindhosts
 version=v1.0.0
-versionCode=100
+versionCode=1
 author=PEMessage
 description=Generate MagicDNS hosts entries for tailscaled and apply them through bindhosts. Manual apply by default; optional boot apply.
