@@ -166,7 +166,10 @@ Optional aliases that collide across nodes are dropped, so the FQDN is the only 
 
 ## Limitations
 
-- Only name → IP. MagicDNS search domains, split DNS, and `svc:` records are out of scope.
+- Only name → IP. Hosts cannot define DNS search domains, so `ADD_SHORT` only adds exact aliases
+  such as `nas`; it is not a search domain. Split DNS and `svc:` records are out of scope.
+- For HTTPS, use the full MagicDNS name (for example `nas.tailxxxx.ts.net`). Certificates match
+  the FQDN, not the short alias.
 - You may need a manual refresh after adding a new device to the tailnet.
 - Android DNS caches may need an app restart.
 

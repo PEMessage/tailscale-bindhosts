@@ -159,7 +159,10 @@ tailscale-bindhosts apply
 
 ## 限制
 
-- 只处理“名字 → IP”，不支持 MagicDNS 的 search domain、split DNS 和 `svc:`。
+- 只处理“名字 → IP”。hosts 无法配置 DNS search domain，`ADD_SHORT` 只是为已知节点添加
+  精确别名（如 `nas`），并不等于 search domain；split DNS 和 `svc:` 也不支持。
+- HTTPS 请使用完整 MagicDNS 名字（例如 `nas.tailxxxx.ts.net`）。证书匹配的是 FQDN，不是
+  短名别名。
 - 向 tailnet 添加新设备后，可能需要手动刷新一次。
 - Android DNS 缓存可能需要重启应用。
 
