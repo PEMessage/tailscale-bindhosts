@@ -6,7 +6,7 @@
   <a href="https://github.com/PEMessage/tailscale-bindhosts"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PEMessage/tailscale-bindhosts?style=flat-square"></a>
   <a href="https://github.com/PEMessage/tailscale-bindhosts/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/PEMessage/tailscale-bindhosts?style=flat-square"></a>
   <a href="https://github.com/PEMessage/tailscale-bindhosts/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/PEMessage/tailscale-bindhosts/total?style=flat-square"></a>
-  <img alt="Magisk, KernelSU, APatch" src="https://img.shields.io/badge/Magisk-KernelSU-APatch-blue?style=flat-square&logo=android&logoColor=white">
+  <img alt="Magisk, KernelSU, APatch" src="https://img.shields.io/badge/Magisk--KernelSU--APatch-blue?style=flat-square&logo=android&logoColor=white">
   <a href="https://github.com/bindhosts/bindhosts"><img alt="Requires bindhosts" src="https://img.shields.io/badge/requires-bindhosts-informational?style=flat-square"></a>
 </p>
 
